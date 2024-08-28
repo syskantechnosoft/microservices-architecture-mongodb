@@ -18,6 +18,7 @@ In this repo you'll find:
 - Maven 3.6.3+
 
 ## Getting Started
+https://www.youtube.com/watch?v=LSrNCVBUI0k
 
 ### MongoDB
 
