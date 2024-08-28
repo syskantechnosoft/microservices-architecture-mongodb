@@ -10,7 +10,7 @@ extract_id() {
 
 post_company() {
   curl -sX POST \
-    'http://localhost:8080/api/company' \
+    'http://localhost:8083/api/company' \
     -H 'accept: */*' \
     -H 'Content-Type: application/json' \
     -d '{
@@ -22,7 +22,7 @@ post_company() {
 
 post_employee() {
   curl -sX POST \
-    'http://localhost:8080/api/employee' \
+    'http://localhost:8083/api/employee' \
     -H 'accept: */*' \
     -H 'Content-Type: application/json' \
     -d '{
@@ -35,31 +35,31 @@ post_employee() {
 }
 
 get_company_by_id() {
-  curl -s 'http://localhost:8080/api/company/id/'"${1}"
+  curl -s 'http://localhost:8083/api/company/id/'"${1}"
 }
 
 get_company_by_name() {
-  curl -s 'http://localhost:8080/api/company/name/'"${1}"
+  curl -s 'http://localhost:8083/api/company/name/'"${1}"
 }
 
 get_companies() {
-  curl -s 'http://localhost:8080/api/companies'
+  curl -s 'http://localhost:8083/api/companies'
 }
 
 get_employee_by_id() {
-  curl -s 'http://localhost:8080/api/employee/id/'"${1}"
+  curl -s 'http://localhost:8083/api/employee/id/'"${1}"
 }
 
 get_employees() {
-  curl -s 'http://localhost:8080/api/employees'
+  curl -s 'http://localhost:8083/api/employees'
 }
 
 delete_companies() {
-  curl -sX DELETE 'http://localhost:8080/api/companies'
+  curl -sX DELETE 'http://localhost:8083/api/companies'
 }
 
 delete_employees() {
-  curl -sX DELETE 'http://localhost:8080/api/employees'
+  curl -sX DELETE 'http://localhost:8083/api/employees'
 }
 
 echo "DELETE Companies"
